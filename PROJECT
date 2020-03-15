@@ -1,0 +1,3 @@
+domain: my.domain
+repo: github.com/sato-s/k8s-at
+version: "2"
