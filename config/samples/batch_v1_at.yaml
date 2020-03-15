@@ -1,0 +1,7 @@
+apiVersion: batch.my.domain/v1
+kind: AT
+metadata:
+  name: at-sample
+spec:
+  # Add fields here
+  foo: bar
