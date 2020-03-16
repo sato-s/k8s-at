@@ -3,5 +3,16 @@ kind: AT
 metadata:
   name: at-sample
 spec:
-  # Add fields here
-  foo: bar
+  schedule: "2020-03-21T13:53:55Z"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: hello
+            image: busybox
+            args:
+            - /bin/sh
+            - -c
+            - sleep 30; echo Hello from the Kubernetes cluster
+          restartPolicy: OnFailure
